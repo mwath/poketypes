@@ -14,6 +14,7 @@ echo "export Pokecliker declarations"
 npx tsc -d --emitDeclarationOnly --outDir ./out
 
 echo "Copy declaration files"
+cp "${POKECLICKER_DIR}/src/scripts/GameConstants.d.ts" "${TYPE_OUT_DIR}"
 rsync -a "${POKECLICKER_DIR}/src/declarations/" "${TYPE_OUT_DIR}"
 rsync -a "${POKECLICKER_DIR}/out/" "${TYPE_OUT_DIR}"
 
