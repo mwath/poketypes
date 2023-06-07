@@ -1,0 +1,2 @@
+# shebang panic with crlf
+*.sh text eol=lf
